@@ -1,0 +1,80 @@
+.promo-container {
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.promo-text {
+  text-align: center;
+  font-weight: 500;
+  margin: 0;
+  animation: slideRight 15s linear infinite;
+}
+
+.promo-dots {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.1;
+  background-image: radial-gradient(circle, white 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Admin promo styles */
+.admin-promo-list {
+  margin-top: var(--space-lg);
+}
+
+.admin-promo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-md);
+  background-color: var(--card-background-light);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-sm);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.admin-promo-text {
+  flex: 1;
+}
+
+.admin-promo-controls {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.admin-promo-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: var(--space-sm);
+}
+
+.admin-promo-status.active {
+  background-color: var(--success-color);
+}
+
+.admin-promo-status.inactive {
+  background-color: var(--error-color);
+}
