@@ -49,6 +49,15 @@ const Navbar = () => {
           >
             CC Generator
           </a>
+
+          <a 
+            href="https://cc-shops-links-by-daily.netlify.app/" 
+            className="navbar-link"
+            target="_blank" 
+            rel="noopener"
+          >
+            CC Shops
+          </a>
           
           <NavLink 
             to="/support" 
@@ -113,6 +122,16 @@ const Navbar = () => {
               onClick={closeMenu}
             >
               CC Generator
+            </a>
+
+            <a 
+              href="https://cc-shops-links-by-daily.netlify.app/" 
+              className="navbar-link"
+              target="_blank" 
+              rel="noopener"
+              onClick={closeMenu}
+            >
+              CC Shops
             </a>
             
             <NavLink 
