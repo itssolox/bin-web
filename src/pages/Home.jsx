@@ -1,5 +1,5 @@
 import { useData } from '../context/DataContext';
-import BinCard from '../components/BinCard';
+import BinPreview from '../components/BinPreview';
 import Promo from '../components/Promo';
 import '../styles/BinCard.css';
 
@@ -33,7 +33,7 @@ const Home = () => {
             data-aos="fade-up"
             data-aos-delay={index * 100}
           >
-            <BinCard bin={bin} />
+            <BinPreview bin={bin} />
           </div>
         ))}
       </div>
