@@ -116,7 +116,31 @@ export const bins = [
     ip: "no vpn",
     address: "no vpn own ip",
     image: "https://tse1.mm.bing.net/th?id=OIP.Hi3_jsIC-B-IC9ohoOg_HAHaEK&pid=Api&P=0&h=180"
-  }
+  },
+  {
+    id: 14,
+    bin: "37662821685 | 04 | 2029",
+    country: "brazil",
+    ip: "brazil",
+    address: "DZEER (2 months), PARMOUNT, PR1M3, T1D4L",
+    image: "https://tse4.mm.bing.net/th?id=OIP.33g2bHniS7QI1eqAo74umwHaEj&pid=Api&P=0&h=180"
+ },
+{
+    id: 15,
+    bin: "548009167804 | 04 | 2029",
+    country: "Not required (VPN)",
+    ip: "Not required (VPN)",
+    address: "Not required (VPN)",
+    image: "https://tse1.mm.bing.net/th?id=OIP.DKqC4A6N1WcjQTWTfdlqbwHaEK&pid=Api&P=0&h=180"
+ },
+{
+    id: 16,
+    bin: "548009167804 | 04 | 2029",
+    country: "Not required (VPN)",
+    ip: "Not required (VPN)",
+    address: "Not required (VPN)",
+    image: "https://tse1.mm.bing.net/th?id=OIP.DKqC4A6N1WcjQTWTfdlqbwHaEK&pid=Api&P=0&h=180"
+ }
 
   
 ];
