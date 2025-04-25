@@ -1,0 +1,26 @@
+.bin-details-page {
+  padding-top: var(--space-xl);
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  font-weight: 500;
+  cursor: pointer;
+  padding: var(--space-sm) 0;
+  margin-bottom: var(--space-lg);
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.back-button:hover {
+  transform: translateX(-4px);
+}
+
+.bin-details-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
