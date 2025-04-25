@@ -25,8 +25,6 @@ const Home = () => {
         Get <a href="https://t.me/dailyb1ns" target="_blank" rel="noopener">top quality method free here</a>
       </p>
       
-      <Disclaimer />
-      
       {promos.length > 0 && <Promo />}
       
       <div className="bins-grid">
@@ -40,6 +38,8 @@ const Home = () => {
           </div>
         ))}
       </div>
+      
+      <Disclaimer />
     </div>
   );
 };
