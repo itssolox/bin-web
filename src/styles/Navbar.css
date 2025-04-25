@@ -25,6 +25,7 @@
 .navbar-links {
   display: flex;
   gap: var(--space-lg);
+  align-items: center;
 }
 
 .navbar-link {
@@ -33,6 +34,8 @@
   font-weight: 500;
   transition: color var(--transition-fast);
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-link:after {
@@ -62,6 +65,51 @@
   width: 100%;
 }
 
+/* Tools dropdown styles */
+.navbar-tools {
+  position: relative;
+}
+
+.tools-button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  font-size: inherit;
+  font-weight: 500;
+  color: var(--text-primary-light);
+  cursor: pointer;
+  padding: 0;
+}
+
+.tools-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--card-background-light);
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: var(--space-sm);
+  min-width: 200px;
+  margin-top: var(--space-sm);
+  animation: fadeIn 0.2s ease;
+}
+
+.tool-link {
+  display: block;
+  padding: var(--space-sm) var(--space-md);
+  color: var(--text-primary-light);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  border-radius: var(--radius-sm);
+}
+
+.tool-link:hover {
+  background-color: var(--background-light);
+  color: var(--primary-color);
+}
+
+/* Mobile menu styles */
 .mobile-menu-button {
   display: none;
   background: none;
@@ -94,6 +142,30 @@
   gap: var(--space-md);
 }
 
+.mobile-tools {
+  padding: var(--space-sm) 0;
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.mobile-tools-header {
+  font-weight: 500;
+  color: var(--text-secondary-light);
+  margin-bottom: var(--space-sm);
+  padding-left: var(--space-sm);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes slideDown {
   from {
     opacity: 0;
@@ -113,5 +185,9 @@
   
   .mobile-menu-button {
     display: block;
+  }
+  
+  .navbar-logo {
+    font-size: var(--font-lg);
   }
 }
