@@ -1,58 +1,115 @@
-import { useState, useEffect } from 'react';
-import '../styles/Disclaimer.css';
+.disclaimer-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: var(--space-md);
+}
 
-const Disclaimer = () => {
-  const [showDisclaimer, setShowDisclaimer] = useState(false);
-  const [showButton, setShowButton] = useState(true);
+.disclaimer-content {
+  background-color: var(--card-background-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowButton(false);
-    }, 15000);
+.disclaimer-close {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: var(--text-secondary-light);
+  cursor: pointer;
+  padding: var(--space-xs);
+  line-height: 1;
+  transition: all var(--transition-fast);
+}
 
-    return () => clearTimeout(timer);
-  }, []);
+.disclaimer-close:hover {
+  color: var(--text-primary-light);
+  transform: scale(1.1);
+}
 
-  return (
-    <>
-      {showDisclaimer && (
-        <div className="disclaimer-modal">
-          <div className="disclaimer-content">
-            <button 
-              className="disclaimer-close"
-              onClick={() => setShowDisclaimer(false)}
-            >
-              ×
-            </button>
-            <h3 className="disclaimer-title">⚠️ Disclaimer</h3>
-            <p>
-              The information provided on this website is for educational purposes only. We are not responsible for any misuse
-              or illegal activities conducted using this information. Users are solely responsible for their actions and must
-              comply with all applicable laws and regulations.
-            </p>
-            <p>
-              By using this website, you acknowledge that:
-            </p>
-            <ul>
-              <li>The information is for educational and research purposes only</li>
-              <li>We do not endorse or encourage any illegal activities</li>
-              <li>You are responsible for your own actions and their consequences</li>
-              <li>We bear no liability for any damages or legal issues arising from the use of this information</li>
-            </ul>
-          </div>
-        </div>
-      )}
-      
-      {showButton && (
-        <button 
-          className="disclaimer-button"
-          onClick={() => setShowDisclaimer(true)}
-        >
-          View Disclaimer
-        </button>
-      )}
-    </>
-  );
-};
+.disclaimer-title {
+  color: var(--warning-color);
+  font-size: var(--font-lg);
+  margin-bottom: var(--space-md);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
 
-export default Disclaimer;
+.disclaimer-content p {
+  margin-bottom: var(--space-md);
+  color: var(--text-secondary-light);
+  line-height: 1.6;
+}
+
+.disclaimer-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.disclaimer-content li {
+  padding-left: var(--space-lg);
+  margin-bottom: var(--space-sm);
+  position: relative;
+  color: var(--text-secondary-light);
+}
+
+.disclaimer-content li:before {
+  content: "•";
+  color: var(--warning-color);
+  position: absolute;
+  left: var(--space-md);
+}
+
+.disclaimer-button {
+  position: fixed;
+  bottom: var(--space-md);
+  right: var(--space-md);
+  background-color: var(--warning-color);
+  color: white;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+}
+
+.disclaimer-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .disclaimer-content {
+    padding: var(--space-md);
+    margin: var(--space-sm);
+  }
+  
+  .disclaimer-content li {
+    padding-left: var(--space-md);
+  }
+  
+  .disclaimer-button {
+    bottom: var(--space-sm);
+    right: var(--space-sm);
+  }
+}
