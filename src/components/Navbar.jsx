@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { FaBars, FaTimes, FaTelegram } from 'react-icons/fa';
+import { FaBars, FaTimes, FaTelegram, FaTools } from 'react-icons/fa';
 import { useAuth } from '../context/AuthContext';
+import { tools } from '../data/data';
 import '../styles/Navbar.css';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showTools, setShowTools] = useState(false);
   const { isAuthenticated, logout } = useAuth();
   
   const toggleMenu = () => {
@@ -14,6 +16,7 @@ const Navbar = () => {
   
   const closeMenu = () => {
     setIsMenuOpen(false);
+    setShowTools(false);
   };
   
   return (
@@ -31,6 +34,33 @@ const Navbar = () => {
             Home
           </NavLink>
           
+          <div 
+            className="navbar-tools"
+            onMouseEnter={() => setShowTools(true)}
+            onMouseLeave={() => setShowTools(false)}
+          >
+            <button className="navbar-link tools-button">
+              <FaTools style={{ marginRight: '4px' }} />
+              Tools
+            </button>
+            
+            {showTools && (
+              <div className="tools-dropdown">
+                {tools.map(tool => (
+                  <a
+                    key={tool.id}
+                    href={tool.url}
+                    className="tool-link"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    {tool.name}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
+          
           <a 
             href="https://t.me/dailyb1ns" 
             className="navbar-link"
@@ -39,24 +69,6 @@ const Navbar = () => {
           >
             <FaTelegram style={{ marginRight: '4px' }} />
             Telegram Channel
-          </a>
-
-          <a 
-            href="https://daily-cc-generator.netlify.app/" 
-            className="navbar-link"
-            target="_blank" 
-            rel="noopener"
-          >
-            CC Generator
-          </a>
-
-          <a 
-            href="https://cc-shops-links-by-daily.netlify.app/" 
-            className="navbar-link"
-            target="_blank" 
-            rel="noopener"
-          >
-            CC Shops
           </a>
           
           <NavLink 
@@ -103,6 +115,22 @@ const Navbar = () => {
               Home
             </NavLink>
             
+            <div className="mobile-tools">
+              <div className="mobile-tools-header">Tools</div>
+              {tools.map(tool => (
+                <a
+                  key={tool.id}
+                  href={tool.url}
+                  className="navbar-link"
+                  target="_blank"
+                  rel="noopener"
+                  onClick={closeMenu}
+                >
+                  {tool.name}
+                </a>
+              ))}
+            </div>
+            
             <a 
               href="https://t.me/dailyb1ns" 
               className="navbar-link"
@@ -112,26 +140,6 @@ const Navbar = () => {
             >
               <FaTelegram style={{ marginRight: '4px' }} />
               Telegram Channel
-            </a>
-
-            <a 
-              href="https://daily-cc-generator.netlify.app/" 
-              className="navbar-link"
-              target="_blank" 
-              rel="noopener"
-              onClick={closeMenu}
-            >
-              CC Generator
-            </a>
-
-            <a 
-              href="https://cc-shops-links-by-daily.netlify.app/" 
-              className="navbar-link"
-              target="_blank" 
-              rel="noopener"
-              onClick={closeMenu}
-            >
-              CC Shops
             </a>
             
             <NavLink 
@@ -179,4 +187,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar
+export default Navbar;
