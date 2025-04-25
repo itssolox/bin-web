@@ -134,6 +134,20 @@ export const promos = [
   }
 ];
 
+export const tools = [
+  {
+    id: 1,
+    name: "CC Generator",
+    url: "https://daily-cc-generator.netlify.app/"
+  },
+  {
+    id: 2,
+    name: "CC Shops",
+    url: "https://cc-shops-links-by-daily.netlify.app/"
+  }
+];
+
+
 export const admins = [
   {
     username: "admin",
