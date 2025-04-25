@@ -8,6 +8,7 @@ import { DataProvider } from './context/DataContext';
 import { AuthProvider } from './context/AuthContext';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
+import BinDetails from './pages/BinDetails';
 import Support from './pages/Support';
 import Admin from './pages/Admin';
 import Login from './pages/Login';
@@ -31,6 +32,7 @@ function App() {
             <main>
               <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/bin/:id" element={<BinDetails />} />
                 <Route path="/support" element={<Support />} />
                 <Route path="/admin" element={<Admin />} />
                 <Route path="/login" element={<Login />} />
