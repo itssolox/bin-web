@@ -1,6 +1,7 @@
 import { useData } from '../context/DataContext';
 import BinPreview from '../components/BinPreview';
 import Promo from '../components/Promo';
+import Disclaimer from '../components/Disclaimer';
 import '../styles/BinCard.css';
 
 const Home = () => {
@@ -23,6 +24,8 @@ const Home = () => {
       >
         Get <a href="https://t.me/dailyb1ns" target="_blank" rel="noopener">top quality method free here</a>
       </p>
+      
+      <Disclaimer />
       
       {promos.length > 0 && <Promo />}
       
