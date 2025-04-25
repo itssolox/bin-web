@@ -1,0 +1,112 @@
+.bin-preview {
+  position: relative;
+}
+
+.bin-preview-card {
+  background-color: var(--card-background-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  border: 1px solid var(--border-light);
+  text-align: center;
+}
+
+.bin-preview-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.bin-preview-image {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: var(--space-md);
+  border-radius: var(--radius-md);
+  transition: transform var(--transition-normal);
+}
+
+.bin-preview-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  border: none;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+  width: 100%;
+}
+
+.bin-preview-button:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.bin-details-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background-color: var(--card-background-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  animation: modalFadeIn 0.3s ease;
+}
+
+.close-button {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: var(--text-secondary-light);
+  cursor: pointer;
+  padding: var(--space-xs);
+  transition: all var(--transition-fast);
+}
+
+.close-button:hover {
+  color: var(--text-primary-light);
+  transform: scale(1.1);
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -48%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Overlay when modal is open */
+.bin-details-modal::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .bin-preview-image {
+    height: 150px;
+  }
+  
+  .bin-details-modal {
+    width: 95%;
+    padding: var(--space-md);
+  }
+}
