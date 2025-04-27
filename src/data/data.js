@@ -126,16 +126,9 @@ export const bins = [
     address: "Not required (VPN)",
     image: "https://tse1.mm.bing.net/th?id=OIP.DKqC4A6N1WcjQTWTfdlqbwHaEK&pid=Api&P=0&h=180"
  },
-{
-    id: 16,
-    bin: "548009167804 | 04 | 2029",
-    country: "Not required (VPN)",
-    ip: "Not required (VPN)",
-    address: "Not required (VPN)",
-    image: "https://tse1.mm.bing.net/th?id=OIP.DKqC4A6N1WcjQTWTfdlqbwHaEK&pid=Api&P=0&h=180"
- },
+
   {
-    id: 17,
+    id: 16,
     bin: "5154620016082xxx 04/2026 ",
     country: "Not required (VPN)",
     ip: "Not required (VPN)",
@@ -143,12 +136,29 @@ export const bins = [
     image: "https://tse2.mm.bing.net/th?id=OIP.oNhdLpiZDnVSQDrAn7G3LAHaEL&pid=Api&P=0&h=180"
  },
   {
-    id: 18,
+    id: 17,
     bin: " 559888948898|11/29",
     country: "THAILAND ",
     ip: "THAILAND ",
     address: " any fake address|LINK: http://microsoft.com/en-us/microsoft-365/try",
     image: "https://tse4.mm.bing.net/th?id=OIP.qOegQlxoYpJjys91B15SwgHaEK&pid=Api&P=0&h=180"
+ },
+  {
+    id: 18,
+    bin: " 432739011546|02|2027 432739011542|02|2027 ",
+    country: "us ",
+    ip: "us ",
+    address: "us use approved cxc",
+    image: "https://th.bing.com/th/id/OIP.PyzJMPl0P2le7XLR6Br1ggHaF4?rs=1&pid=ImgDetMain"
+ },
+
+{
+    id: 19,
+    bin: "416916141669xxx",
+    country: "no vpn",
+    ip: "no vpn",
+    address: "method uploaded in channel",
+    image: "https://tse2.mm.bing.net/th?id=OIP.AeTSrnSgW1J-KlxfOE2_TgHaE8&pid=Api&P=0&h=180"
  }
   
   
