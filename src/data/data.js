@@ -11,12 +11,12 @@ export const bins = [
     usage: {
       title: "How to Use This BIN",
       steps: [
-        "Use this BIN for educational purposes only",
-        "Test using secure environments",
-        "Verify BIN compatibility before usage",
-        "Comply with local regulations"
+        "First gen cxc",
+        "Add it via pay.google.com use vpn of country",
+        "use generated cxc",
+        "Take yt premium 1 month trial"
       ],
-      notes: "BIN related to Algeria for educational use.",
+      notes: "Use Algeria Vpn must while purchase.",
       warning: "For educational purposes only."
     }
   },
@@ -30,13 +30,13 @@ export const bins = [
     usage: {
       title: "How to Use This BIN",
       steps: [
-        "Use for testing Mexico-based transactions",
-        "Validate on demo gateways",
+        "Need approved or charged cxc",
+        "Use vpn to create acc and while purchase",
         "Apply randomized data for testing",
-        "Monitor for validation issues"
+        "Use kiwi/duckduckgo browser"
       ],
-      notes: "Mexican BIN for simulation only.",
-      warning: "Do not use for real transactions."
+      notes: "Use mexico vpn while process.",
+      warning: "For educational purposes only."
     }
   },
   {
@@ -49,12 +49,12 @@ export const bins = [
     usage: {
       title: "How to Use This BIN",
       steps: [
-        "Use own IP for realistic tests",
-        "Ensure compliance with security protocols",
-        "Randomize additional card details",
-        "Use on authorized test sites only"
+        "Dont use any vpn but use duckduckgo browser",
+        "use cxc approved for better results",
+        "gen also works need tries",
+        "For educational purposes only."
       ],
-      notes: "Sample BIN for IP address-related testing.",
+      notes: "Use fresh ip.",
       warning: "Educational purposes only."
     }
   },
@@ -68,13 +68,13 @@ export const bins = [
     usage: {
       title: "How to Use This BIN",
       steps: [
-        "Use on USA-based platforms",
-        "Perform validation on US IPs",
+        "Gives hit but needs tries",
+        "Use approved cxc",
         "Use randomized data",
-        "Check compatibility with US gateways"
+        "use vpn must"
       ],
-      notes: "US-based BIN for general testing.",
-      warning: "Testing and educational use only."
+      notes: "US-based BIN.",
+      warning: "For educational purposes only.."
     }
   },
   {
@@ -87,13 +87,13 @@ export const bins = [
     usage: {
       title: "How to Use This BIN",
       steps: [
-        "Own region test purposes",
-        "Randomize card details",
-        "Use trusted proxy if needed",
-        "Always respect TOS"
+        "Play store trial bin",
+        "use vpn of cxc country",
+        "use gen works",
+        "Take any trial of playstore"
       ],
-      notes: "Use carefully under own jurisdiction.",
-      warning: "Testing only, not for transactions."
+      notes: "For educational purposes only..",
+      warning: "For educational purposes only.."
     }
   },
   {
@@ -106,13 +106,13 @@ export const bins = [
     usage: {
       title: "How to Use This BIN",
       steps: [
-        "Simulate Brazilian gateway flows",
+        "Spotify need luck or approved cxc",
         "Test with Brazilian IPs",
-        "Validate expiration formats",
+        "use vpn ",
         "Use securely"
       ],
-      notes: "Brazil-based BIN testing.",
-      warning: "Use responsibly."
+      notes: "Brazil-based BIN.",
+      warning: "For educational purposes only.."
     }
   },
   {
@@ -125,12 +125,12 @@ export const bins = [
     usage: {
       title: "How to Use This BIN",
       steps: [
-        "Use complete address for testing",
-        "Match CVV validation",
+        "use vpn video tutorial uploaded in tg channel",
+        "use gen cxc",
         "Generate random names if needed",
-        "Always monitor results"
+        "use us ip"
       ],
-      notes: "Detailed US BIN data for testing flows.",
+      notes: "First take trial then 1 year hit.",
       warning: "Educational use only."
     }
   },
@@ -144,13 +144,13 @@ export const bins = [
     usage: {
       title: "How to Use This BIN",
       steps: [
-        "Access Adobe catalog for simulations",
+        "use approved cxc",
         "Randomize cardholder data",
-        "Ensure IP matching",
-        "Conduct sandbox tests"
+        "fresh ip use",
+        "......"
       ],
-      notes: "BIN linked to Adobe test environment.",
-      warning: "Not for live payments."
+      notes: "no notes.",
+      warning: "For educational purposes only.."
     }
   },
   {
@@ -163,13 +163,13 @@ export const bins = [
     usage: {
       title: "How to Use This BIN",
       steps: [
-        "Perform test transactions for Mexico",
-        "Use in sandbox environments",
+        "Mexico",
+        "take 3 months",
         "Use randomized user data",
-        "Verify billing and shipping consistency"
+        "use approved cxc"
       ],
       notes: "Testing BIN from Mexico region.",
-      warning: "Sandbox only."
+      warning: "For educational purposes only..."
     }
   },
   {
@@ -182,13 +182,13 @@ export const bins = [
     usage: {
       title: "How to Use This BIN",
       steps: [
-        "Test with Mexico's regional settings",
-        "Simulate expiration date handling",
-        "Cross-verify payment gateway acceptance",
-        "Stay compliant"
+        "Play store purchase",
+        "use vpn while adding cxc",
+        "take aproved or charged cxc",
+        "use vpn must"
       ],
-      notes: "Another Mexican BIN for dev testing.",
-      warning: "Strictly for dev/test."
+      notes: "use play store purchase.",
+      warning: "For educational purposes only..."
     }
   },
   {
@@ -201,13 +201,13 @@ export const bins = [
     usage: {
       title: "How to Use This BIN",
       steps: [
-        "Test uploads or subscriptions",
-        "Focus on expiration validations",
+        "can use at gemini",
+        "gdrive 2tb",
         "Use random but valid addresses",
-        "Always secure the environment"
+        "add cxc at pay.google.com"
       ],
-      notes: "BIN used in cloud service testing.",
-      warning: "No real usage."
+      notes: "tested bin video tutorial uploaded in channel.",
+      warning: "For educational purposes only.."
     }
   },
   {
@@ -221,12 +221,12 @@ export const bins = [
       title: "How to Use This BIN",
       steps: [
         "Generate valid card numbers",
-        "Validate BIN before use",
+        "gen works smoothly",
         "Use random ZIP codes",
-        "Check IP matching rules"
+        "use vpn must usa"
       ],
       notes: "Test BIN 10080, USA region.",
-      warning: "Only in test labs."
+      warning: "For educational purposes only.."
     }
   },
   {
@@ -242,10 +242,10 @@ export const bins = [
         "Test with Peru regional settings",
         "Simulate user data",
         "Use correct IP mapping",
-        "Secure sandbox"
+        "use kiwi"
       ],
       notes: "Peru-specific BIN.",
-      warning: "No real transactions."
+      warning: "For educational purposes only.."
     }
   },
   {
@@ -260,11 +260,11 @@ export const bins = [
       steps: [
         "Focus on Brazilian environment",
         "Randomize address fields",
-        "Test gateways support",
-        "Use strictly for internal tests"
+        "use approved",
+        "you can hit paramount,tidal,prime"
       ],
       notes: "Brazil random test details.",
-      warning: "Testing only."
+      warning: "For educational purposes only.."
     }
   },
   {
@@ -277,13 +277,13 @@ export const bins = [
     usage: {
       title: "How to Use This BIN",
       steps: [
-        "Use VPNs when needed",
-        "Do not attempt unauthorized uses",
-        "Mask IPs properly",
-        "Simulate safe transactions"
+        "not tested",
+        "not tested",
+        ".....",
+        "use approved"
       ],
-      notes: "VPN-protected testing.",
-      warning: "Compliance necessary."
+      notes: "use approved cxc and fresh ip.",
+      warning: "For educational purposes only.."
     }
   },
   {
@@ -298,11 +298,11 @@ export const bins = [
       steps: [
         "Use code for pro plan",
         "Generate BIN correctly",
-        "Apply sandbox only",
-        "Don't leak generated data"
+        "video tutorial uploaded in channel",
+        "use gen "
       ],
       notes: "Testing BIN for subscription sites.",
-      warning: "Stay within terms."
+      warning: "For educational purposes only.."
     }
   },
   {
@@ -316,12 +316,12 @@ export const bins = [
       title: "How to Use This BIN",
       steps: [
         "Test Microsoft trials",
-        "Ensure IP proximity",
+        "use gen/approved",
         "Validate expiration",
         "Do not misuse"
       ],
       notes: "Thailand-based testing.",
-      warning: "Sandbox usage only."
+      warning: "For educational purposes only..."
     }
   },
   {
@@ -335,12 +335,12 @@ export const bins = [
       title: "How to Use This BIN",
       steps: [
         "Test multiple linked BINs",
-        "Focus on payment compatibility",
-        "Generate random names",
-        "Secure all results"
+        "Focus on approved cxc",
+        "Generated works but take approved",
+        "use fresh ip"
       ],
-      notes: "Double BIN testing.",
-      warning: "No real services."
+      notes: "need tries.",
+      warning: "For educational purposes only.."
     }
   },
   {
@@ -353,13 +353,13 @@ export const bins = [
     usage: {
       title: "How to Use This BIN",
       steps: [
-        "No VPN needed for tests",
-        "Direct access preferred",
-        "Follow the channel instructions",
-        "Do not misuse"
+        "No need any vpn (I think), becuse i hit uc without use any vpn ",
+        "It is highly recommended to use an old Gmail account. If you try this method with a new Gmail account, you may experience multiple payment failures. So, avoid being too clever—stick to using an old Gmail if you have one.",
+        "This method is 100% effective. If you are encountering payment failures or errors while trying to buy UC or diamonds, I suggest changing your device, IP address, and Gmail account. Also, ensure there are no credit cards linked to that account.",
+        "Purchase only small amounts. Don’t be overly ambitious, buy only smaller packs, like 75 UC or 100 diamonds💎. If you attempt to buy larger packs, you may face transaction failures."
       ],
-      notes: "Direct testing method provided.",
-      warning: "Internal testing only."
+      notes: "Add cc in the game during buy ,not in play store or YouTube ..",
+      warning: "For educational purposes only..."
     }
   }
 ];
