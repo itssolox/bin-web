@@ -88,9 +88,16 @@ const BinCard = ({ bin }) => {
       <div className="bin-usage">
         <div className="bin-usage-header">
           <FaInfoCircle style={{ marginRight: '4px' }} />
-          How To Use This
+          {bin.usage.title}
         </div>
-        <p>For detailed usage instructions and methods, join our Telegram channel:</p>
+        <ul className="bin-usage-steps">
+          {bin.usage.steps.map((step, index) => (
+            <li key={index}>{step}</li>
+          ))}
+        </ul>
+        <p className="bin-usage-notes">{bin.usage.notes}</p>
+        <p className="bin-usage-warning">{bin.usage.warning}</p>
+        <p className="bin-usage-telegram">For more detailed instructions and methods, join our Telegram channel:</p>
         <a 
           href="https://t.me/dailyb1ns"
           target="_blank"
