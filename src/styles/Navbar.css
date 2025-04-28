@@ -1,6 +1,6 @@
 .navbar {
-  background-color: var(--card-background-light);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: var(--space-md) 0;
   position: sticky;
   top: 0;
@@ -16,10 +16,11 @@
 .navbar-logo {
   font-size: var(--font-xl);
   font-weight: bold;
-  color: var(--primary-color);
+  color: white;
   text-decoration: none;
   display: flex;
   align-items: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-links {
@@ -30,12 +31,14 @@
 
 .navbar-link {
   text-decoration: none;
-  color: var(--text-primary-light);
+  color: rgba(255, 255, 255, 0.9);
   font-weight: 500;
-  transition: color var(--transition-fast);
+  transition: all var(--transition-fast);
   position: relative;
   display: flex;
   align-items: center;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
 }
 
 .navbar-link:after {
@@ -43,14 +46,15 @@
   position: absolute;
   width: 0;
   height: 2px;
-  bottom: -4px;
+  bottom: -2px;
   left: 0;
-  background-color: var(--primary-color);
+  background-color: white;
   transition: width var(--transition-fast);
 }
 
 .navbar-link:hover {
-  color: var(--primary-color);
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .navbar-link:hover:after {
@@ -58,7 +62,8 @@
 }
 
 .navbar-link.active {
-  color: var(--primary-color);
+  color: white;
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 .navbar-link.active:after {
@@ -77,22 +82,29 @@
   border: none;
   font-size: inherit;
   font-weight: 500;
-  color: var(--text-primary-light);
+  color: rgba(255, 255, 255, 0.9);
   cursor: pointer;
-  padding: 0;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+}
+
+.tools-button:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .tools-dropdown {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: var(--card-background-light);
+  background-color: white;
   border-radius: var(--radius-md);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   padding: var(--space-sm);
   min-width: 200px;
   margin-top: var(--space-sm);
   animation: fadeIn 0.2s ease;
+  border: 1px solid var(--border-light);
 }
 
 .tool-link {
@@ -115,8 +127,14 @@
   background: none;
   border: none;
   font-size: var(--font-xl);
-  color: var(--text-primary-light);
+  color: white;
   cursor: pointer;
+  padding: var(--space-xs);
+  border-radius: var(--radius-sm);
+}
+
+.mobile-menu-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .mobile-menu {
@@ -125,9 +143,9 @@
   top: 60px;
   left: 0;
   right: 0;
-  background-color: var(--card-background-light);
+  background-color: white;
   padding: var(--space-md);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   z-index: 999;
   animation: slideDown var(--transition-fast);
 }
