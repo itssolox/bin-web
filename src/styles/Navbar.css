@@ -1,3 +1,4 @@
+/* Navbar base styles */
 .navbar {
   background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -75,6 +76,13 @@
   position: relative;
 }
 
+.navbar-tools:hover .tools-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition-delay: 0s;
+}
+
 .tools-button {
   display: flex;
   align-items: center;
@@ -103,8 +111,21 @@
   padding: var(--space-sm);
   min-width: 200px;
   margin-top: var(--space-sm);
-  animation: fadeIn 0.2s ease;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease, visibility 0.3s ease;
   border: 1px solid var(--border-light);
+}
+
+.tools-dropdown::before {
+  content: '';
+  position: absolute;
+  top: -16px;
+  left: 0;
+  right: 0;
+  height: 16px;
+  background: transparent;
 }
 
 .tool-link {
