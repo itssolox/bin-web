@@ -361,6 +361,25 @@ export const bins = [
       notes: "Add cc in the game during buy ,not in play store or YouTube ..",
       warning: "For educational purposes only..."
     }
+  },
+   {
+    id: 20,
+    bin: "542418148608xxxx",
+    country: "Us",
+    ip: "us",
+    address: "pin 10080",
+    image: "https://tse3.mm.bing.net/th?id=OIP.rA03mxrzsUvJSa8O-urxvQHaD4&pid=Api&P=0&h=180",
+    usage: {
+      title: "How to Use This BIN",
+      steps: [
+        "tutorial uploaded in channel",
+        "use us ip.",
+        "tutorial in channel uploaded free.",
+        "...."
+      ],
+      notes: "..",
+      warning: "For educational purposes only..."
+    }
   }
 ];
 
