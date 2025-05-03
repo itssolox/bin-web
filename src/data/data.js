@@ -384,6 +384,41 @@ export const bins = [
 ];
 
 
+
+export const methods = [
+  {
+    id: 1,
+    title: "Surfshark 2 Months Method",
+    steps: [
+      "Visit Eneba.com and purchase Surfshark using UPI (for Indians) or CC (for international users)",
+      "Use the following BIN for generation",
+      "Use your own IP or any good IP address",
+      "Auto renewal will occur after 2 months",
+      "Generate and try for better approval rates",
+      "After successful purchase, redeem your Eneba code at surfshark.com/partnerships-offer"
+    ],
+    bin: "59888037914|07|32",
+    notes: [
+      "For Indian users: Use UPI payment method",
+      "For international users: Credit card payment available",
+      "Auto-renewal feature included",
+      "Better success rate with approved generators"
+    ],
+    links: [
+      {
+        text: "Purchase on Eneba",
+        url: "https://www.eneba.com/surfshark-promo-surfshark-vpn-unlimited-devices-2-month-trial-key-global"
+      },
+      {
+        text: "Redeem Code",
+        url: "https://surfshark.com/partnerships-offer"
+      }
+    ]
+  }
+];
+
+
+
 export const promos = [
   {
     id: 1,
