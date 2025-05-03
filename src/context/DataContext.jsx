@@ -1,5 +1,5 @@
 import { createContext, useState, useContext } from 'react';
-import { bins as initialBins, promos as initialPromos } from '../data/data';
+import { bins as initialBins, promos as initialPromos, methods as initialMethods } from '../data/data';
 
 const DataContext = createContext();
 
@@ -8,6 +8,7 @@ export const useData = () => useContext(DataContext);
 export const DataProvider = ({ children }) => {
   const [bins, setBins] = useState(initialBins);
   const [promos, setPromos] = useState(initialPromos);
+  const [methods, setMethods] = useState(initialMethods);
   
   // Add a new bin
   const addBin = (newBin) => {
@@ -38,16 +39,30 @@ export const DataProvider = ({ children }) => {
     setPromos(promos.filter(promo => promo.id !== id));
   };
   
+  // Add a new method
+  const addMethod = (newMethod) => {
+    const id = methods.length > 0 ? Math.max(...methods.map(method => method.id)) + 1 : 1;
+    setMethods([...methods, { ...newMethod, id }]);
+  };
+  
+  // Delete a method
+  const deleteMethod = (id) => {
+    setMethods(methods.filter(method => method.id !== id));
+  };
+  
   return (
     <DataContext.Provider value={{
       bins,
       promos: promos.filter(promo => promo.active),
       allPromos: promos,
+      methods,
       addBin,
       deleteBin,
       addPromo,
       togglePromoStatus,
-      deletePromo
+      deletePromo,
+      addMethod,
+      deleteMethod
     }}>
       {children}
     </DataContext.Provider>
