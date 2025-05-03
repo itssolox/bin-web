@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { FaBars, FaTimes, FaTelegram, FaTools } from 'react-icons/fa';
+import { FaBars, FaTimes, FaTelegram, FaTools, FaBook } from 'react-icons/fa';
 import { useAuth } from '../context/AuthContext';
 import { tools } from '../data/data';
 import '../styles/Navbar.css';
@@ -32,6 +32,14 @@ const Navbar = () => {
             className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"}
           >
             Home
+          </NavLink>
+          
+          <NavLink 
+            to="/methods" 
+            className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"}
+          >
+            <FaBook style={{ marginRight: '4px' }} />
+            Methods
           </NavLink>
           
           <div 
@@ -113,6 +121,15 @@ const Navbar = () => {
               onClick={closeMenu}
             >
               Home
+            </NavLink>
+            
+            <NavLink 
+              to="/methods" 
+              className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"}
+              onClick={closeMenu}
+            >
+              <FaBook style={{ marginRight: '4px' }} />
+              Methods
             </NavLink>
             
             <div className="mobile-tools">
