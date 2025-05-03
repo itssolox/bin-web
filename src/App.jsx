@@ -10,6 +10,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import BinDetails from './pages/BinDetails';
 import Methods from './pages/Methods';
+import MethodDetails from './pages/MethodDetails';
 import Support from './pages/Support';
 import Admin from './pages/Admin';
 import Login from './pages/Login';
@@ -35,6 +36,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/bin/:id" element={<BinDetails />} />
                 <Route path="/methods" element={<Methods />} />
+                <Route path="/methods/:id" element={<MethodDetails />} />
                 <Route path="/support" element={<Support />} />
                 <Route path="/admin" element={<Admin />} />
                 <Route path="/login" element={<Login />} />
