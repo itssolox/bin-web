@@ -1,0 +1,28 @@
+.methods-container {
+  padding-top: var(--space-xl);
+}
+
+.methods-title {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: var(--space-xl);
+  font-size: var(--font-xxl);
+}
+
+.methods-grid {
+  display: grid;
+  gap: var(--space-lg);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .methods-container {
+    padding-top: var(--space-lg);
+  }
+  
+  .methods-title {
+    font-size: var(--font-xl);
+    margin-bottom: var(--space-lg);
+  }
+}
