@@ -596,6 +596,24 @@ export const tools = [
   }
 ];
 
+export const websites = [
+  {
+    id: 1,
+    name: "Daily CC Generator",
+    url: "https://daily-cc-generator.netlify.app/"
+  },
+  {
+    id: 2,
+    name: "CC Shops Links",
+    url: "https://cc-shops-links-by-daily.netlify.app/"
+  },
+  {
+    id: 3,
+    name: "BIN Checker",
+    url: "https://bin-checker-by-daily.netlify.app/"
+  }
+];
+
 
 export const admins = [
   {
