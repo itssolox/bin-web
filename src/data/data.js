@@ -388,6 +388,124 @@ export const bins = [
 export const methods = [
   {
     id: 1,
+    title: "❗️ Private Channel Access ❗️",
+    steps: [
+      "No nonsense, only private and valuable content",
+      "Get back what you pay effortlessly!",
+      "Daily cxcs drops charged & approved",
+      "Access to all Websites Bins CCs",
+      "Private CC Shops",
+      "CC Drops on BIN Demand",
+      "Live CVV Access",
+      "Cracked Accounts",
+      "Methods to Crack Accounts",
+      "Checker Tutorial",
+      "Edit Checker Source Code",
+      "OG Checker Codes",
+      "YouTube Premium 12 Months Bypass Method",
+      "OTT Carding for All OTTs",
+      "OTT Carding from Zero to Hero!"
+    ],
+    notes: [
+      "Monthly: 199₹ / $3",
+      "Permanent: 600₹ / $7",
+      "Payment methods: Binance, LTC available"
+    ],
+    links: [
+      {
+        text: "Contact on Telegram",
+        url: "https://t.me/Its_soloz"
+      },
+      {
+        text: "Alternative Contact",
+        url: "https://t.me/solox_se_baatbot"
+      },
+      {
+        text: "Join Channel",
+        url: "https://t.me/dailyb1ns"
+      }
+    ]
+  },
+  {
+    id: 2,
+    title: "BGMI UC Method",
+    steps: [
+      "No VPN required (works without VPN)",
+      "Use an old Gmail account for better success rate",
+      "Change device, IP, and Gmail if experiencing failures",
+      "Purchase small amounts only (75 UC or 100 diamonds)",
+      "Add CC in-game during purchase, not in Play Store or YouTube"
+    ],
+    notes: [
+      "100% effective method",
+      "Avoid new Gmail accounts",
+      "No credit cards should be linked to the account",
+      "Small purchases have higher success rate"
+    ],
+    links: [
+      {
+        text: "Join Telegram Channel",
+        url: "https://t.me/dailyb1ns"
+      }
+    ]
+  },
+  {
+    id: 3,
+    title: "ChatGPT Plus Free Access",
+    steps: [
+      "Use Netherlands VPN during the process",
+      "Visit oxaam.com",
+      "Enter any random name, email, phone number, password",
+      "Click on activate ChatGPT"
+    ],
+    notes: [
+      "VPN location is crucial for success",
+      "Use temporary/disposable email if possible",
+      "Method may need to be repeated periodically"
+    ],
+    links: [
+      {
+        text: "Access Website",
+        url: "https://oxaam.com"
+      },
+      {
+        text: "Join Telegram Channel",
+        url: "https://t.me/dailyb1ns"
+      }
+    ]
+  },
+  {
+    id: 4,
+    title: "Camera & Voice Hacking Tool",
+    steps: [
+      "Run: apt-get update -y",
+      "Run: apt-get upgrade -y",
+      "Run: pkg install git -y",
+      "Run: pip install lolcat",
+      "Run: git clone https://github.com/Expert-Hacker/E-TOOL.git",
+      "Run: cd E-TOOL",
+      "Run: bash setup.sh",
+      "For camera: cd voice && bash camera.sh",
+      "For voice: cd .. && cd voice && bash voice.sh",
+      "Choose Server 1 or 2 when prompted",
+      "Select Y if asked",
+      "Send generated link to target"
+    ],
+    notes: [
+      "Educational purposes only",
+      "Requires target permission",
+      "Works on most devices",
+      "Choose appropriate server based on location"
+    ],
+    links: [
+      {
+        text: "Join Telegram Channel",
+        url: "https://t.me/dailyb1ns"
+      }
+    ]
+  },
+  {
+    id: 5,
     title: "Surfshark 2 Months Method",
     steps: [
       "Visit Eneba.com and purchase Surfshark using UPI (for Indians) or CC (for international users)",
@@ -412,6 +530,39 @@ export const methods = [
       {
         text: "Redeem Code",
         url: "https://surfshark.com/partnerships-offer"
+      },
+      {
+        text: "Join Telegram Channel",
+        url: "https://t.me/dailyb1ns"
+      }
+    ]
+  },
+  {
+    id: 6,
+    title: "Get 3 Months Swiggy One Free with IndiGo Blue",
+    steps: [
+      "Open Swiggy App and navigate to Profile section",
+      "Go to Partner Rewards in your profile",
+      "Link your IndiGo BluChips account with Swiggy",
+      "Visit IndiGo dashboard to get your membership number",
+      "If you don't have an account, create one to get a membership number",
+      "Enter your membership number in Swiggy",
+      "Click on 'Claim now' to activate your 3-month Swiggy One membership"
+    ],
+    notes: [
+      "Valid for all IndiGo BluChips members",
+      "Membership must be active to claim the offer",
+      "Benefits start immediately after successful claim",
+      "3-month membership period starts from activation date"
+    ],
+    links: [
+      {
+        text: "IndiGo Dashboard",
+        url: "https://www.goindigo.in/loyalty/dashboard.html"
+      },
+      {
+        text: "Join Telegram Channel",
+        url: "https://t.me/dailyb1ns"
       }
     ]
   }
