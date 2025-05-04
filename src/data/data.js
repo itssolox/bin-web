@@ -599,19 +599,10 @@ export const tools = [
 export const websites = [
   {
     id: 1,
-    name: "Daily CC Generator",
-    url: "https://daily-cc-generator.netlify.app/"
-  },
-  {
-    id: 2,
-    name: "CC Shops Links",
-    url: "https://cc-shops-links-by-daily.netlify.app/"
-  },
-  {
-    id: 3,
-    name: "BIN Checker",
-    url: "https://bin-checker-by-daily.netlify.app/"
+    name: "Programming Courses",
+    url: "https://firebasestorage.googleapis.com/v0/b/animal-planet-73497.appspot.com/o/uploads%2F7863737666%2Fprogrammingcourse.html?alt=media&token=token"
   }
+ 
 ];
 
 
