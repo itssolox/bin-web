@@ -231,20 +231,20 @@ export const bins = [
   },
   {
     id: 13,
-    bin: "428083004263xxxx",
-    country: "PERU",
-    ip: "PERU",
-    address: "PERU",
+    bin: "💳  : 475776510071xxxx FECHA : 03|2028",
+    country: "chile",
+    ip: "chile",
+    address: "chile",
     image: "https://tse1.mm.bing.net/th?id=OIP.R2wCRp3FoL857WgEi0dJpQHaGM&pid=Api&P=0&h=180",
     usage: {
       title: "How to Use This BIN",
       steps: [
-        "Test with Peru regional settings",
-        "Simulate user data",
-        "Use correct IP mapping",
-        "use kiwi"
+        "Video tutorial uploaded in channel",
+        "",
+        "",
+        ""
       ],
-      notes: "Peru-specific BIN.",
+      notes: "Video tutorial uploaded in channel.",
       warning: "For educational purposes only.."
     }
   },
