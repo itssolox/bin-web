@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { FaBars, FaTimes, FaTelegram, FaTools, FaBook } from 'react-icons/fa';
+import { FaBars, FaTimes, FaTelegram, FaTools, FaBook, FaCreditCard } from 'react-icons/fa';
 import { useAuth } from '../context/AuthContext';
 import { tools } from '../data/data';
 import '../styles/Navbar.css';
@@ -32,6 +32,14 @@ const Navbar = () => {
             className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"}
           >
             Home
+          </NavLink>
+          
+          <NavLink 
+            to="/bins" 
+            className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"}
+          >
+            <FaCreditCard style={{ marginRight: '4px' }} />
+            Bins
           </NavLink>
           
           <NavLink 
@@ -79,13 +87,6 @@ const Navbar = () => {
             Telegram Channel
           </a>
           
-          <NavLink 
-            to="/support" 
-            className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"}
-          >
-            Support
-          </NavLink>
-          
           {isAuthenticated ? (
             <>
               <NavLink 
@@ -124,6 +125,15 @@ const Navbar = () => {
             </NavLink>
             
             <NavLink 
+              to="/bins" 
+              className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"}
+              onClick={closeMenu}
+            >
+              <FaCreditCard style={{ marginRight: '4px' }} />
+              Bins
+            </NavLink>
+            
+            <NavLink 
               to="/methods" 
               className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"}
               onClick={closeMenu}
@@ -158,14 +168,6 @@ const Navbar = () => {
               <FaTelegram style={{ marginRight: '4px' }} />
               Telegram Channel
             </a>
-            
-            <NavLink 
-              to="/support" 
-              className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"}
-              onClick={closeMenu}
-            >
-              Support
-            </NavLink>
             
             {isAuthenticated ? (
               <>
