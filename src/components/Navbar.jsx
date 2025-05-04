@@ -1,14 +1,13 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { FaBars, FaTimes, FaTelegram, FaTools, FaBook, FaCreditCard } from 'react-icons/fa';
-import { useAuth } from '../context/AuthContext';
-import { tools } from '../data/data';
+import { FaBars, FaTimes, FaTelegram, FaTools, FaBook, FaCreditCard, FaGlobe } from 'react-icons/fa';
+import { tools, websites } from '../data/data';
 import '../styles/Navbar.css';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showTools, setShowTools] = useState(false);
-  const { isAuthenticated, logout } = useAuth();
+  const [showWebsites, setShowWebsites] = useState(false);
   
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -17,6 +16,7 @@ const Navbar = () => {
   const closeMenu = () => {
     setIsMenuOpen(false);
     setShowTools(false);
+    setShowWebsites(false);
   };
   
   return (
@@ -76,6 +76,33 @@ const Navbar = () => {
               </div>
             )}
           </div>
+
+          <div 
+            className="navbar-tools"
+            onMouseEnter={() => setShowWebsites(true)}
+            onMouseLeave={() => setShowWebsites(false)}
+          >
+            <button className="navbar-link tools-button">
+              <FaGlobe style={{ marginRight: '4px' }} />
+              Websites
+            </button>
+            
+            {showWebsites && (
+              <div className="tools-dropdown">
+                {websites.map(site => (
+                  <a
+                    key={site.id}
+                    href={site.url}
+                    className="tool-link"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    {site.name}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
           
           <a 
             href="https://t.me/dailyb1ns" 
@@ -86,28 +113,6 @@ const Navbar = () => {
             <FaTelegram style={{ marginRight: '4px' }} />
             Telegram Channel
           </a>
-          
-          {isAuthenticated ? (
-            <>
-              <NavLink 
-                to="/admin" 
-                className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"}
-              >
-                Admin Panel
-              </NavLink>
-              
-              <button onClick={logout} className="navbar-link" style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
-                Logout
-              </button>
-            </>
-          ) : (
-            <NavLink 
-              to="/login" 
-              className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"}
-            >
-              Login
-            </NavLink>
-          )}
         </div>
         
         <button className="mobile-menu-button" onClick={toggleMenu}>
@@ -157,6 +162,22 @@ const Navbar = () => {
                 </a>
               ))}
             </div>
+
+            <div className="mobile-tools">
+              <div className="mobile-tools-header">Websites</div>
+              {websites.map(site => (
+                <a
+                  key={site.id}
+                  href={site.url}
+                  className="navbar-link"
+                  target="_blank"
+                  rel="noopener"
+                  onClick={closeMenu}
+                >
+                  {site.name}
+                </a>
+              ))}
+            </div>
             
             <a 
               href="https://t.me/dailyb1ns" 
@@ -168,37 +189,6 @@ const Navbar = () => {
               <FaTelegram style={{ marginRight: '4px' }} />
               Telegram Channel
             </a>
-            
-            {isAuthenticated ? (
-              <>
-                <NavLink 
-                  to="/admin" 
-                  className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"}
-                  onClick={closeMenu}
-                >
-                  Admin Panel
-                </NavLink>
-                
-                <button 
-                  onClick={() => {
-                    logout();
-                    closeMenu();
-                  }} 
-                  className="navbar-link" 
-                  style={{ background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left' }}
-                >
-                  Logout
-                </button>
-              </>
-            ) : (
-              <NavLink 
-                to="/login" 
-                className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"}
-                onClick={closeMenu}
-              >
-                Login
-              </NavLink>
-            )}
           </div>
         </div>
       </div>
