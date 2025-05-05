@@ -565,6 +565,37 @@ export const methods = [
         url: "https://t.me/dailyb1ns"
       }
     ]
+  },
+   {
+    id: 7,
+    title: "✨ Create Premium Netflix Accounts ✨",
+    steps: [
+      "Connect to Switzerland using Express/Vypr VPN",
+      "Visit netflix.com",
+      "Set up email and choose package",
+      "Select credit/debit card payment option",
+      "Get a virtual debit card from Airtel Thanks app using a new number",
+      "Ensure VPN is connected to Switzerland",
+      "Enter card information on payment page",
+      "Click continue and wait for verification",
+      "Enter OTP received on your phone"
+    ],
+    notes: [
+      "Requires Express/Vypr VPN",
+      "Needs Airtel Thanks Application",
+      "Pan card verification not required if filled immediately",
+      "Method works for 2025"
+    ],
+    links: [
+      {
+        text: "Contact for Entry",
+        url: "https://t.me/its_soloz"
+      },
+      {
+        text: "Join Telegram Channel",
+        url: "https://t.me/dailyb1ns"
+      }
+    ]
   }
 ];
 
