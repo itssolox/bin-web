@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { FaBars, FaTimes, FaTelegram, FaTools, FaBook, FaCreditCard, FaGlobe } from 'react-icons/fa';
 import { tools, websites } from '../data/data';
 import '../styles/Navbar.css';
@@ -8,6 +8,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showTools, setShowTools] = useState(false);
   const [showWebsites, setShowWebsites] = useState(false);
+  const navigate = useNavigate();
   
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -17,6 +18,15 @@ const Navbar = () => {
     setIsMenuOpen(false);
     setShowTools(false);
     setShowWebsites(false);
+  };
+
+  const handleToolClick = (tool) => {
+    if (tool.component) {
+      navigate('/image-generator');
+    } else if (tool.url) {
+      window.open(tool.url, '_blank');
+    }
+    closeMenu();
   };
   
   return (
@@ -63,15 +73,13 @@ const Navbar = () => {
             {showTools && (
               <div className="tools-dropdown">
                 {tools.map(tool => (
-                  <a
+                  <button
                     key={tool.id}
-                    href={tool.url}
                     className="tool-link"
-                    target="_blank"
-                    rel="noopener"
+                    onClick={() => handleToolClick(tool)}
                   >
                     {tool.name}
-                  </a>
+                  </button>
                 ))}
               </div>
             )}
@@ -150,16 +158,13 @@ const Navbar = () => {
             <div className="mobile-tools">
               <div className="mobile-tools-header">Tools</div>
               {tools.map(tool => (
-                <a
+                <button
                   key={tool.id}
-                  href={tool.url}
                   className="navbar-link"
-                  target="_blank"
-                  rel="noopener"
-                  onClick={closeMenu}
+                  onClick={() => handleToolClick(tool)}
                 >
                   {tool.name}
-                </a>
+                </button>
               ))}
             </div>
 
