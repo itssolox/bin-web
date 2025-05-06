@@ -387,7 +387,7 @@ export const bins = [
     country: "Us",
     ip: "us",
     address: "pin 10080",
-    image: "https://images.app.goo.gl/zLRub8ZdzPsi1xnz7",
+    image: "Mcâfee bin",
     usage: {
       title: "How to Use This BIN",
       steps: [
