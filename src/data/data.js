@@ -647,7 +647,7 @@ export const tools = [
    {
     id: 3,
     name: "AI Image Generator",
-    url: "/image-generator"
+    component: "ImageGenerator"
   }
 ];
 
