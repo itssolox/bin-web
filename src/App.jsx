@@ -14,6 +14,7 @@ import Methods from './pages/Methods';
 import MethodDetails from './pages/MethodDetails';
 import Support from './pages/Support';
 import Admin from './pages/Admin';
+import ImageGenerator from './pages/ImageGenerator';
 import './styles/App.css';
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
                 <Route path="/methods/:id" element={<MethodDetails />} />
                 <Route path="/support" element={<Support />} />
                 <Route path="/admin" element={<Admin />} />
+                <Route path="/image-generator" element={<ImageGenerator />} />
               </Routes>
             </main>
             <ToastContainer position="bottom-right" />
@@ -50,4 +52,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
