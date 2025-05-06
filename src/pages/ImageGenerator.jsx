@@ -15,10 +15,22 @@ const ImageGenerator = () => {
 
     setLoading(true);
     setError('');
+    setImageUrl('');
     
     try {
       const encodedPrompt = encodeURIComponent(prompt.trim());
       const url = `https://bj-devs.serv00.net/v1/text-to-image.php?prompt=${encodedPrompt}`;
+      
+      // Create a new image object to preload
+      const img = new Image();
+      img.src = url;
+      
+      // Wait for image to load or fail
+      await new Promise((resolve, reject) => {
+        img.onload = resolve;
+        img.onerror = reject;
+      });
+      
       setImageUrl(url);
     } catch (err) {
       setError('Failed to generate image. Please try again.');
@@ -41,6 +53,7 @@ const ImageGenerator = () => {
           onChange={(e) => setPrompt(e.target.value)}
           placeholder="Enter your prompt here..."
           className="prompt-input"
+          onKeyPress={(e) => e.key === 'Enter' && generateImage()}
         />
         <button 
           onClick={generateImage}
@@ -53,16 +66,23 @@ const ImageGenerator = () => {
 
       {error && <p className="error-message">{error}</p>}
 
-      {imageUrl && (
-        <div className="image-container">
+      <div className="image-container">
+        {loading && (
+          <div className="loader-container">
+            <div className="loader"></div>
+            <p>Generating your image...</p>
+          </div>
+        )}
+        
+        {imageUrl && !loading && (
           <img 
             src={imageUrl} 
             alt="Generated" 
             className="generated-image"
             onError={() => setError('Failed to load image. Please try again.')}
           />
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 };
