@@ -380,6 +380,25 @@ export const bins = [
       notes: "..",
       warning: "For educational purposes only..."
     }
+  },
+  {
+    id: 21,
+    bin: "542418148608",
+    country: "Us",
+    ip: "us",
+    address: "pin 10080",
+    image: "https://images.app.goo.gl/zLRub8ZdzPsi1xnz7",
+    usage: {
+      title: "How to Use This BIN",
+      steps: [
+        "tutorial uploaded in channel",
+        "use us ip.",
+        "tutorial in channel uploaded free.",
+        "...."
+      ],
+      notes: "..",
+      warning: "For educational purposes only..."
+    }
   }
 ];
 
