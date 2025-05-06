@@ -656,6 +656,11 @@ export const websites = [
     id: 1,
     name: "Programming Courses",
     url: "https://firebasestorage.googleapis.com/v0/b/animal-planet-73497.appspot.com/o/uploads%2F7863737666%2Fprogrammingcourse.html?alt=media&token=token"
+  },
+  {
+    id: 2,
+    name: "RDP Cracking Courses",
+    url: "https://firebasestorage.googleapis.com/v0/b/animal-planet-73497.appspot.com/o/uploads%2F7863737666%2Frdpcracking.html?alt=media&token=token"
   }
  
 ];
