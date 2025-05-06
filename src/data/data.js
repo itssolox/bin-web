@@ -643,6 +643,11 @@ export const tools = [
     id: 2,
     name: "CC Shops",
     url: "https://cc-shops-links-by-daily.netlify.app/"
+  },
+   {
+    id: 3,
+    name: "AI Image Generator",
+    url: "/image-generator"
   }
 ];
 
