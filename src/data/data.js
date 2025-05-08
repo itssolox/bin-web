@@ -681,11 +681,34 @@ export const websites = [
     id: 1,
     name: "Programming Courses",
     url: "https://firebasestorage.googleapis.com/v0/b/animal-planet-73497.appspot.com/o/uploads%2F7863737666%2Fprogrammingcourse.html?alt=media&token=token"
+  },
+   {
+    id: 4,
+    name: "Premium Private Channel",
+    url: "https://bingenius.my.canva.site/premium-website-design-for-solox-private-channel"
   }
-
  
 ];
 
+export const scripts = [
+  {
+    id: 1,
+    title: "Request for Assistance with Family Group Re-Creation Due to Accidental Deletion",
+    content: `Dear Google Support Team,
+
+I hope this message finds you well. I am writing to seek assistance regarding an issue I am experiencing with the Google Family Group feature.
+
+Recently, I inadvertently deleted my existing family group, which I had set up to manage and share services with my family members. Upon attempting to recreate the family group, I encountered the following error message:
+
+"You can only switch to a different family group once every 12 months."
+
+I understand that this policy is in place to prevent misuse; however, in this instance, the deletion was accidental. This restriction is currently preventing me from effectively managing and sharing services with my family.
+
+I kindly request your assistance in resolving this matter. Is it possible to reset the 12-month restriction in this case, allowing me to set up the family group again? I would greatly appreciate any help or guidance you can provide.
+
+Thank you for your time and understanding. I look forward to your response.`
+  }
+];
 
 export const admins = [
   {
