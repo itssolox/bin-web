@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
-import { FaBars, FaTimes, FaTelegram, FaTools, FaBook, FaCreditCard, FaGlobe } from 'react-icons/fa';
+import { FaBars, FaTimes, FaTelegram, FaTools, FaBook, FaCreditCard, FaGlobe, FaScroll } from 'react-icons/fa';
 import { tools, websites } from '../data/data';
 import '../styles/Navbar.css';
 
@@ -58,6 +58,14 @@ const Navbar = () => {
           >
             <FaBook style={{ marginRight: '4px' }} />
             Methods
+          </NavLink>
+
+          <NavLink 
+            to="/scripts" 
+            className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"}
+          >
+            <FaScroll style={{ marginRight: '4px' }} />
+            Scripts
           </NavLink>
           
           <div 
@@ -153,6 +161,15 @@ const Navbar = () => {
             >
               <FaBook style={{ marginRight: '4px' }} />
               Methods
+            </NavLink>
+
+            <NavLink 
+              to="/scripts" 
+              className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"}
+              onClick={closeMenu}
+            >
+              <FaScroll style={{ marginRight: '4px' }} />
+              Scripts
             </NavLink>
             
             <div className="mobile-tools">
