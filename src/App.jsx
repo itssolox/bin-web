@@ -12,6 +12,7 @@ import Bins from './pages/Bins';
 import BinDetails from './pages/BinDetails';
 import Methods from './pages/Methods';
 import MethodDetails from './pages/MethodDetails';
+import Scripts from './pages/Scripts';
 import Support from './pages/Support';
 import Admin from './pages/Admin';
 import ImageGenerator from './pages/ImageGenerator';
@@ -39,6 +40,7 @@ function App() {
                 <Route path="/bin/:id" element={<BinDetails />} />
                 <Route path="/methods" element={<Methods />} />
                 <Route path="/methods/:id" element={<MethodDetails />} />
+                <Route path="/scripts" element={<Scripts />} />
                 <Route path="/support" element={<Support />} />
                 <Route path="/admin" element={<Admin />} />
                 <Route path="/image-generator" element={<ImageGenerator />} />
@@ -52,4 +54,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
