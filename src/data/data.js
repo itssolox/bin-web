@@ -422,7 +422,7 @@ export const methods = [
       "Edit Checker Source Code",
       "OG Checker Codes",
       "YouTube Premium 12 Months Bypass Method",
-      "OTT Carding for All OTTs",
+      "OTT Carding for all OTTs",
       "OTT Carding from Zero to Hero!"
     ],
     notes: [
@@ -585,7 +585,7 @@ export const methods = [
       }
     ]
   },
-   {
+  {
     id: 7,
     title: "✨ Create Premium Netflix Accounts ✨",
     steps: [
@@ -615,9 +615,29 @@ export const methods = [
         url: "https://t.me/dailyb1ns"
       }
     ]
+  },
+  {
+    id: 8,
+    title: "📱SPOTIFY 3 MONTHS PREMIUM 📱",
+    steps: [
+      "First, create an account with your email address",
+      "Create a password",
+      "Choose the free 3-month trial option"
+    ],
+    bin: "426807033508xxxx|02|2028\n426807034139xxxx|10|2026",
+    notes: [
+      "IP: MEXICO 🇲🇽",
+      "Click on generated or take live for greater effectiveness",
+      "Send SCREENSHOTS 📸"
+    ],
+    links: [
+      {
+        text: "Join Telegram Channel",
+        url: "https://t.me/dailyb1ns"
+      }
+    ]
   }
 ];
-
 
 
 export const promos = [
