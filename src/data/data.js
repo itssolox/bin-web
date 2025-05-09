@@ -644,15 +644,15 @@ export const tools = [
     name: "CC Shops",
     url: "https://cc-shops-links-by-daily.netlify.app/"
   },
-   {
+  {
     id: 3,
     name: "AI Image Generator",
     component: "ImageGenerator"
   },
-   {
+  {
     id: 4,
-    name: "Fake Address Gen",
-    component: "https://bingenius.my.canva.site/dailyaddress-generator-global-fake-address-maker"
+    name: "Fake Address Generator",
+    url: "https://bingenius.my.canva.site/dailyaddress-generator-global-fake-address-maker"
   }
 ];
 
