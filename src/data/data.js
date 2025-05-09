@@ -628,7 +628,7 @@ export const methods = [
     notes: [
       "IP: MEXICO 🇲🇽",
       "Click on generated or take live for greater effectiveness",
-      "Send SCREENSHOTS 📸"
+      "Trial link https://www.spotify.com/mx/premium/?ref=checkout#plans"
     ],
     links: [
       {
