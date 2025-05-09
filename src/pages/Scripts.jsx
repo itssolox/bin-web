@@ -11,20 +11,24 @@ const Scripts = () => {
       </h1>
       
       <div className="scripts-grid">
-        {scripts.map((script) => (
-          <div 
-            key={script.id} 
-            className="script-card"
-            data-aos="fade-up"
-          >
-            <h2>{script.title}</h2>
-            <div className="script-content">
-              {script.content.split('\n\n').map((paragraph, index) => (
-                <p key={index}>{paragraph}</p>
-              ))}
+        {Array.isArray(scripts) && scripts.length > 0 ? (
+          scripts.map((script) => (
+            <div 
+              key={script.id} 
+              className="script-card"
+              data-aos="fade-up"
+            >
+              <h2>{script.title}</h2>
+              <div className="script-content">
+                {script.content.split('\n\n').map((paragraph, index) => (
+                  <p key={index}>{paragraph}</p>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))
+        ) : (
+          <p>No scripts available</p>
+        )}
       </div>
     </div>
   );
