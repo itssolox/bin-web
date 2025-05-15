@@ -1,5 +1,3 @@
-// Sample initial data - this file will be edited by admin
-
 export const bins = [
   {
     id: 1,
@@ -22,10 +20,10 @@ export const bins = [
   },
   {
     id: 2,
-    bin: "557910043846xxxx|08|2029",
-    country: "Mexico",
-    ip: "Mexico",
-    address: "Rnd",
+    bin: "479354500035xxxx|08|2026|",
+    country: "us",
+    ip: "us",
+    address: "pin:--10080",
     image: "https://tse3.mm.bing.net/th?id=OIP.-xy8_PdZvv_w6fQEti6ruwHaHa&pid=Api&P=0&h=180",
     usage: {
       title: "How to Use This BIN",
@@ -41,7 +39,7 @@ export const bins = [
   },
   {
     id: 3,
-    bin: "542432360758xxxx|08|2026|rnd",
+    bin: "4147181431xxxxxx | 07|2027",
     country: "Own ip",
     ip: "Own ip",
     address: "Carolyn lampe, 178 Columbus Avenue, New York, NY",
@@ -79,7 +77,7 @@ export const bins = [
   },
   {
     id: 5,
-    bin: "4169161437116206|29|",
+    bin: "BIN:515462003663|08|28 BIN:51546200366",
     country: "Own",
     ip: "Own",
     address: "RND",
@@ -98,7 +96,7 @@ export const bins = [
   },
   {
     id: 6,
-    bin: "37662821651xxxx",
+    bin: "37644050188 | 03|30",
     country: "Brazil",
     ip: "Brazil",
     address: "Brazil",
@@ -155,7 +153,7 @@ export const bins = [
   },
   {
     id: 9,
-    bin: "416916088904|12|2027",
+    bin: "5579100443xxxxx | 01|28 557910043xxxxxx | 01|30 557910041xxxxxx | 01|30",
     country: "Mexico",
     ip: "Mexico",
     address: "Mexico RND",
@@ -165,7 +163,7 @@ export const bins = [
       steps: [
         "Mexico",
         "take 3 months",
-        "Use randomized user data",
+        "Use Opera or Opera Gaming browser for best results",
         "use approved cxc"
       ],
       notes: "Testing BIN from Mexico region.",
@@ -364,7 +362,7 @@ export const bins = [
   },
    {
     id: 20,
-    bin: "542418148608xxxx",
+    bin: "451407853038xxxx | 07|2025",
     country: "Us",
     ip: "us",
     address: "pin 10080",
@@ -387,7 +385,7 @@ export const bins = [
     country: "Us",
     ip: "us",
     address: "pin 10080",
-    image: "Mcâfee bin",
+    image: "https://tse2.mm.bing.net/th?id=OIP.9-uU95lgc2_4n83XiKDfTwAAAA&pid=Api&P=0&h=180",
     usage: {
       title: "How to Use This BIN",
       steps: [
@@ -399,8 +397,148 @@ export const bins = [
       notes: "..",
       warning: "For educational purposes only..."
     }
+  },
+{
+    id: 22,
+    bin: "555270013540xxxx | 12|2025",
+    country: "Us",
+    ip: "us",
+    address: "pin 10080",
+    image: "https://tse1.mm.bing.net/th?id=OIP.iPcVDe87mw9ipTIkRCb8FAHaDQ&pid=Api&P=0&h=180",
+    usage: {
+      title: "How to Use This BIN",
+      steps: [
+        "try urself",
+        "use fresh ip.",
+        "try ur self.",
+        "...."
+      ],
+      notes: "..",
+      warning: "For educational purposes only..."
+    }
+  }
+,
+{
+    id: 23,
+    bin: "512106528997 | 11|26  512106500115 | 05|29  512106531227 | 10|26  512107981477 | 05|29",
+    country: "Us",
+    ip: "us",
+    address: "pin 90001",
+    image: "https://tse4.mm.bing.net/th?id=OIP.zraFFbkaWbVLxE8L14bK4wHaD4&pid=Api&P=0&h=180",
+    usage: {
+      title: "How to Use This BIN",
+      steps: [
+        "Select the cheapest monthly plan.",
+        "use fresh ip.",
+        "Choose United States as country..",
+        "...."
+      ],
+      notes: "..",
+      warning: "For educational purposes only..."
+    }
+  }
+,
+{
+    id: 24,
+    bin: "414734208912xxxx | 09|2028",
+    country: "Us",
+    ip: "us",
+    address: "pin 90001",
+    image: "https://tse4.mm.bing.net/th?id=OIP.zXHvuoXQZ00EbGQuhj-bmwHaD4&pid=Api&P=0&h=180",
+    usage: {
+      title: "How to Use This BIN",
+      steps: [
+        "Select the cheapest plan.",
+        "use fresh ip.",
+        "Choose United States as country..",
+        "...."
+      ],
+      notes: "..",
+      warning: "For educational purposes only..."
+    }
+  }
+,
+{
+    id: 25,
+    bin: "515462002684xxxx | 07|2031 | XXX",
+    country: "not specified",
+    ip: "not specified",
+    address: "not specified",
+    image: "https://tse4.mm.bing.net/th?id=OIP.eH7PkdaSFpmiqPQPOjpEbwHaDx&pid=Api&P=0&h=180",
+    usage: {
+      title: "How to Use This BIN",
+      steps: [
+        "Select the cheapest plan.",
+        "use fresh ip.",
+        "Choose  country..",
+        "...."
+      ],
+      notes: "..",
+      warning: "For educational purposes only..."
+    }
+  }
+,
+{
+    id: 26,
+    bin: "414740033",
+    country: "Us",
+    ip: "us",
+    address: "pin 90001",
+    image: "https://tse3.mm.bing.net/th?id=OIP.i2Kfnk_putKzO_44CyaqugHaFW&pid=Api&P=0&h=180",
+    usage: {
+      title: "How to Use This BIN",
+      steps: [
+        "Select the cheapest plan.",
+        "use fresh ip.",
+        "Choose United States as country..",
+        "...."
+      ],
+      notes: "..",
+      warning: "For educational purposes only..."
+    }
+  }
+,
+{
+    id: 27,
+    bin: "BIN - 524105004763xxxx EXP - 05/2026",
+    country: "no vpn",
+    ip: "no vpn",
+    address: "no vpn",
+    image: "https://tse3.mm.bing.net/th?id=OIP.9CmvZ2lnNnMGqA-300PMHgHaEK&pid=Api&P=0&h=180",
+    usage: {
+      title: "How to Use This BIN",
+      steps: [
+        "Select the cheapest plan.",
+        "use fresh ip.",
+        "",
+        "...."
+      ],
+      notes: "..",
+      warning: "For educational purposes only..."
+    }
+  }
+,
+{
+    id: 27,
+    bin: "BIN - 515462001684xxxx EXP - 10/2028",
+    country: "Us",
+    ip: "us",
+    address: "us 10010",
+    image: "https://tse4.mm.bing.net/th?id=OIP.hGOP5qW0dF4VFyx4-LHW8gHaDs&pid=Api&P=0&h=180",
+    usage: {
+      title: "How to Use This BIN",
+      steps: [
+        "Select the cheapest plan.",
+        "use fresh ip.",
+        "",
+        "...."
+      ],
+      notes: "..",
+      warning: "For educational purposes only..."
+    }
   }
 ];
+
 
 
 
@@ -427,7 +565,7 @@ export const methods = [
     ],
     notes: [
       "Monthly: 199₹ / $3",
-      "Permanent: 600₹ / $7",
+      "Permanent: 600₹ / $9",
       "Payment methods: Binance, LTC available"
     ],
     links: [
